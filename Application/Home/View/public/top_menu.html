@@ -1,0 +1,16 @@
+<div class="header">
+    <div class="clearfix layout">
+        <h1><a href="__ROOTHOME__/accountmanage/userManage">交易管理系统</a></h1>
+        <div>
+
+            <php>
+                if($user['identity_id'] != 3){</php>
+                <a href="__ROOTHOME__/accountmanage/userManage"  <if condition="($active eq 'accountmanage')" > class="active" </if>  >账户管理</a>
+            <php> } </php>
+            <a href="__ROOTHOME__/clientmanage/clientList"  <if condition="($active eq 'clientmanage')" > class="active" </if>   >客户管理</a>
+            <a href="__ROOTHOME__/countmanage/countTable"  <if condition="($active eq 'countmanage')" > class="active" </if>  >结算管理</a>
+            <a href="__ROOTHOME__/sysmanage/pwdManage" <if condition="($active eq 'sysmanage')" > class="active" </if>  >系统管理</a>
+            <span class="spantext" >管理员：{$user['uid']},<a style="color:#FF0000;" href="__ROOTHOME__/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
+        </div>
+    </div>
+</div>
