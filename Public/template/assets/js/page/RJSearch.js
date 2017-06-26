@@ -49,6 +49,20 @@ define([
                 var oTr;
                 $.each(result.list, function (i, v) {
 
+                     if(v.status==0){
+                        var statusMeg = '处理中';
+                    }else if(v.status==1){
+                        var statusMeg = '处理中';
+                    }else if(v.status==2){
+                        var statusMeg = '失败';
+                    }else if(v.status==3){
+                        var statusMeg = '成功';
+                    }else{
+                        var statusMeg = '未知';
+                    }
+                      
+
+                    /*
                     if(v.status==1){
                         var statusMeg = '处理中';
                     }else if(v.status==2){
@@ -58,6 +72,7 @@ define([
                     }else{
                         var statusMeg = '未知';
                     }
+                    */
 
                     var timeTd = '<td>' + v.depositTime + '</td>';
                     var codeTd = '<td>' + v.uid + '</td>';
