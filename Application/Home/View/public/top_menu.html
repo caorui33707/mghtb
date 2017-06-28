@@ -10,7 +10,7 @@
             <a href="__ROOTHOME__/clientmanage/clientList"  <if condition="($active eq 'clientmanage')" > class="active" </if>   >客户管理</a>
             <a href="__ROOTHOME__/countmanage/countTable"  <if condition="($active eq 'countmanage')" > class="active" </if>  >结算管理</a>
             <a href="__ROOTHOME__/sysmanage/pwdManage" <if condition="($active eq 'sysmanage')" > class="active" </if>  >系统管理</a>
-            <span class="spantext" >管理员：{$user['uid']},<a style="color:#FF0000;" href="__ROOTHOME__/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
+            <span class="spantext" >管理员：<?php $user = session('user'); echo $user['uid'];?> ,<a style="color:#FF0000;" href="__ROOTHOME__/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
         </div>
     </div>
 </div>

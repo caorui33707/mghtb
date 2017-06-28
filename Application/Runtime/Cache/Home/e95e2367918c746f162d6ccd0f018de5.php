@@ -5,43 +5,43 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>客户列表</title>
-    <link rel="stylesheet" href="/htb/Public/template/assets/css/index.min.css">
+    <link rel="stylesheet" href="/Public/template/assets/css/index.min.css">
 </head>
 <body>
 <div class="wrap">
     <div class="header">
     <div class="clearfix layout">
-        <h1><a href="/htb/index.php/Home/accountmanage/userManage">交易管理系统</a></h1>
+        <h1><a href="/index.php/Home/accountmanage/userManage">交易管理系统</a></h1>
         <div>
 
             <?php if($user['identity_id'] != 3){ ?>
-                <a href="/htb/index.php/Home/accountmanage/userManage"  <?php if(($active == 'accountmanage')): ?>class="active"<?php endif; ?>  >账户管理</a>
+                <a href="/index.php/Home/accountmanage/userManage"  <?php if(($active == 'accountmanage')): ?>class="active"<?php endif; ?>  >账户管理</a>
             <?php } ?>
-            <a href="/htb/index.php/Home/clientmanage/clientList"  <?php if(($active == 'clientmanage')): ?>class="active"<?php endif; ?>   >客户管理</a>
-            <a href="/htb/index.php/Home/countmanage/countTable"  <?php if(($active == 'countmanage')): ?>class="active"<?php endif; ?>  >结算管理</a>
-            <a href="/htb/index.php/Home/sysmanage/pwdManage" <?php if(($active == 'sysmanage')): ?>class="active"<?php endif; ?>  >系统管理</a>
-            <span class="spantext" >管理员：<?php echo ($user['uid']); ?>,<a style="color:#FF0000;" href="/htb/index.php/Home/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
+            <a href="/index.php/Home/clientmanage/clientList"  <?php if(($active == 'clientmanage')): ?>class="active"<?php endif; ?>   >客户管理</a>
+            <a href="/index.php/Home/countmanage/countTable"  <?php if(($active == 'countmanage')): ?>class="active"<?php endif; ?>  >结算管理</a>
+            <a href="/index.php/Home/sysmanage/pwdManage" <?php if(($active == 'sysmanage')): ?>class="active"<?php endif; ?>  >系统管理</a>
+            <span class="spantext" >管理员：<?php echo ($user['uid']); ?>,<a style="color:#FF0000;" href="/index.php/Home/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
         </div>
     </div>
 </div>
     <!--<div class="header">-->
         <!--<div class="clearfix layout">-->
-            <!--<h1><a href="/htb/index.php/Home/accountmanage/usermanage">交易管理系统</a></h1>-->
+            <!--<h1><a href="/index.php/Home/accountmanage/usermanage">交易管理系统</a></h1>-->
             <!--<div>-->
-                <!--<a href="/htb/index.php/Home/accountmanage/usermanage">账户管理</a>-->
-                <!--<a href="/htb/index.php/Home/clientmanage/clientList" class="active">客户管理</a>-->
-                <!--<a href="/htb/index.php/Home/countmanage/countTable">结算管理</a>-->
-                <!--<a href="/htb/index.php/Home/sysmanage/pwdManage">系统管理</a>-->
+                <!--<a href="/index.php/Home/accountmanage/usermanage">账户管理</a>-->
+                <!--<a href="/index.php/Home/clientmanage/clientList" class="active">客户管理</a>-->
+                <!--<a href="/index.php/Home/countmanage/countTable">结算管理</a>-->
+                <!--<a href="/index.php/Home/sysmanage/pwdManage">系统管理</a>-->
             <!--</div>-->
         <!--</div>-->
     <!--</div>-->
     <div class="main">
         <div class="sidebar">
-            <a href="/htb/index.php/Home/clientmanage/clientList" class="active">客户列表</a>
-            <a href="/htb/index.php/Home/clientmanage/chiCangSearch">持仓查询</a>
-            <a href="/htb/index.php/Home/clientmanage/pingCangSearch">平仓查询</a>
-            <a href="/htb/index.php/Home/clientmanage/chuJinSearch">出金查询</a>
-            <a href="/htb/index.php/Home/clientmanage/ruJinSearch" >入金查询</a>
+            <a href="/index.php/Home/clientmanage/clientList" class="active">客户列表</a>
+            <a href="/index.php/Home/clientmanage/chiCangSearch">持仓查询</a>
+            <a href="/index.php/Home/clientmanage/pingCangSearch">平仓查询</a>
+            <a href="/index.php/Home/clientmanage/chuJinSearch">出金查询</a>
+            <a href="/index.php/Home/clientmanage/ruJinSearch" >入金查询</a>
         </div>
         <div class="content">
             <!--<div class="control-bar"><a href="javascript:;" class="btn">导出EXL</a></div>-->
@@ -119,7 +119,7 @@
                                                                         class="remodal-cancel">取消</a></div>
     </div>
 </div>
-<script src="/htb/Public/template/assets/js/vendor/require.js" data-main="/htb/Public/template/assets/js/common"></script>
+<script src="/Public/template/assets/js/vendor/require.js" data-main="/Public/template/assets/js/common"></script>
 <script>
     require(['common'], function () {
         require(['page/clientList']);

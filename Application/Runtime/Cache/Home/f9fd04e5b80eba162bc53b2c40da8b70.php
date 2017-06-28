@@ -5,46 +5,46 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>机构管理</title>
-    <link rel="stylesheet" href="/htb/Public/template/assets/css/index.min.css">
+    <link rel="stylesheet" href="/Public/template/assets/css/index.min.css">
 </head>
 <body>
 <div class="wrap">
     <div class="header">
     <div class="clearfix layout">
-        <h1><a href="/htb/index.php/Home/accountmanage/userManage">交易管理系统</a></h1>
+        <h1><a href="/index.php/Home/accountmanage/userManage">交易管理系统</a></h1>
         <div>
 
             <?php if($user['identity_id'] != 3){ ?>
-                <a href="/htb/index.php/Home/accountmanage/userManage"  <?php if(($active == 'accountmanage')): ?>class="active"<?php endif; ?>  >账户管理</a>
+                <a href="/index.php/Home/accountmanage/userManage"  <?php if(($active == 'accountmanage')): ?>class="active"<?php endif; ?>  >账户管理</a>
             <?php } ?>
-            <a href="/htb/index.php/Home/clientmanage/clientList"  <?php if(($active == 'clientmanage')): ?>class="active"<?php endif; ?>   >客户管理</a>
-            <a href="/htb/index.php/Home/countmanage/countTable"  <?php if(($active == 'countmanage')): ?>class="active"<?php endif; ?>  >结算管理</a>
-            <a href="/htb/index.php/Home/sysmanage/pwdManage" <?php if(($active == 'sysmanage')): ?>class="active"<?php endif; ?>  >系统管理</a>
-            <span class="spantext" >管理员：<?php echo ($user['uid']); ?>,<a style="color:#FF0000;" href="/htb/index.php/Home/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
+            <a href="/index.php/Home/clientmanage/clientList"  <?php if(($active == 'clientmanage')): ?>class="active"<?php endif; ?>   >客户管理</a>
+            <a href="/index.php/Home/countmanage/countTable"  <?php if(($active == 'countmanage')): ?>class="active"<?php endif; ?>  >结算管理</a>
+            <a href="/index.php/Home/sysmanage/pwdManage" <?php if(($active == 'sysmanage')): ?>class="active"<?php endif; ?>  >系统管理</a>
+            <span class="spantext" >管理员：<?php echo ($user['uid']); ?>,<a style="color:#FF0000;" href="/index.php/Home/login/doLoginout" onclick="return confirm('确定退出本系统?')" >系统退出</a></span>
         </div>
     </div>
 </div>
     <!--<div class="header">-->
         <!--<div class="clearfix layout">-->
-            <!--<h1><a href="/htb/index.php/Home/accountmanage/orgManage">交易管理系统</a></h1>-->
+            <!--<h1><a href="/index.php/Home/accountmanage/orgManage">交易管理系统</a></h1>-->
             <!--<div>-->
-                <!--<a href="/htb/index.php/Home/accountmanage/userManage" class="active">账户管理</a>-->
-                <!--<a href="/htb/index.php/Home/clientmanage/clientList">客户管理</a>-->
-                <!--<a href="/htb/index.php/Home/countmanage/countTable">结算管理</a>-->
-                <!--<a href="/htb/index.php/Home/sysmanage/pwdManage">系统管理</a>-->
+                <!--<a href="/index.php/Home/accountmanage/userManage" class="active">账户管理</a>-->
+                <!--<a href="/index.php/Home/clientmanage/clientList">客户管理</a>-->
+                <!--<a href="/index.php/Home/countmanage/countTable">结算管理</a>-->
+                <!--<a href="/index.php/Home/sysmanage/pwdManage">系统管理</a>-->
             <!--</div>-->
         <!--</div>-->
     <!--</div>-->
     <div class="main">
 
         <div class="sidebar">
-    <a href="/htb/index.php/Home/accountmanage/userManage" <?php if($actionUrl=='userManage'){ echo 'class="active"'; } ?> >用户管理</a>
+    <a href="/index.php/Home/accountmanage/userManage" <?php if($actionUrl=='userManage'){ echo 'class="active"'; } ?> >用户管理</a>
     <?php if($user['identity_id'] != 2){ ?>
-    <a href="/htb/index.php/Home/accountmanage/orgManage" <?php if($actionUrl=='orgManage'){ echo 'class="active"';} ?> >机构管理</a>
+    <a href="/index.php/Home/accountmanage/orgManage" <?php if($actionUrl=='orgManage'){ echo 'class="active"';} ?> >机构管理</a>
     <?php } ?>
 
-    <a href="/htb/index.php/Home/accountmanage/brokerManage"  <?php if($actionUrl=='brokerManage'){ echo 'class="active"';} ?>  >经纪人管理</a>
-    <!--a(class="#{ level[1] == 4 ? 'active' : '' }" href="/htb/index.php/Home/wqManage") 微圈管理-->
+    <a href="/index.php/Home/accountmanage/brokerManage"  <?php if($actionUrl=='brokerManage'){ echo 'class="active"';} ?>  >经纪人管理</a>
+    <!--a(class="#{ level[1] == 4 ? 'active' : '' }" href="/index.php/Home/wqManage") 微圈管理-->
 </div>
 
         <div class="content">
@@ -179,7 +179,7 @@
         <div class="remodal-footer"><a href="javascript:;" class="remodal-confirm">确 定</a></div>
     </div>
 </div>
-<script src="/htb/Public/template/assets/js/vendor/require.js" data-main="/htb/Public/template/assets/js/common"></script>
+<script src="/Public/template/assets/js/vendor/require.js" data-main="/Public/template/assets/js/common"></script>
 <script>
     require(['common'], function () {
         require(['page/orgManage']);
